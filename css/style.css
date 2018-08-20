@@ -55,9 +55,6 @@ body {
 .actions>button:focus {
     border: none;
 }
-.token.comment,.token.selector, .token.punctuation, .token.property{
-    color: black;
-}
 
 .token.comment{color:slategray;}
 .token.selector{color: #690;}
