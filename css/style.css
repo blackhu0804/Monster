@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition:  all 1s;
+}
+* ::after {
+    transition:  all 1s;
+    box-sizing: border-box;
+}
+* ::before {
+    transition:  all 1s;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.code-wrapper {
+    padding: 10px;
+    height: 50vh;
+    flex: 1;
+}
+#code {
+    height: 100%;
+    overflow: auto;
+}
+.preview-wrapper {
+    flex: 1;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(lightcyan, lightblue);
+}
+.actions {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.actions>button {
+    margin-top: 10px;
+    padding: 8px 10px;
+    border-radius: 4px;
+    background-color: #dddddd;
+    cursor: pointer;
+    border: none;
+}
+.actions>button.active {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .7);
+}
+.actions>button:focus {
+    border: none;
+}
+.token.comment,.token.selector, .token.punctuation, .token.property{
+    color: black;
+}
+
+.token.comment{color:slategray;}
+.token.selector{color: #690;}
+.token.punctuation {color: #999;}
+.token.property {color: #905;}
+
